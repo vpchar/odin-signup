@@ -21,3 +21,11 @@ The first representation was this:
 Then I decided to ask for this also: 
 
 ![draft 2 - mobile screens](readme/Frame2.png)
+
+So I focused on the LAYOUT and spent few minutes looking for solutions online, then came back at home and built it. If you know what's happening, you kinda "see it". Still hate css but little less now...
+
+Oh, yeah, I played this https://flexboxfroggy.com game while outside. That was also refreshing
+
+I found that if I split the css file in two -- one for the layout (skelethone) and one for the visual gimmics, things are better. Reinventing the weel here, I suppose, but separating things on smaller parts always helps me.
+
+Once I made the sidebar with an empty *main* content part; I had to repeat the same process but only for the main container.
