@@ -15,7 +15,7 @@ the task and how to cut it in small pieces.
 
 # Plan for the beginning of the page
 The first representation was this: \n
-![draft 1 - full screen] url('readme/Frame 1.png')
+![draft 1 - full screen] url('./readme/Frame 1.png')
 
 Then I decided to ask for this also: \n
 ![draft 2 - mobile screens] url('readme/Frame 2.png')
