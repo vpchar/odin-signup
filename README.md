@@ -172,3 +172,34 @@ main{
     padding: 5vh 5vw;
 }
 ```
+And that's almost all! The layout part was pretty much done. I just had to add the input fields to the form, make them to wrap and put enough width to make them wrap on small screens:
+
+```html
+<div class="mainMiddle">
+    <!-- form fields -->
+    <div class="formField">
+        <label for="first-name">First Name</label>
+        <input type="text" name="first-name" id="first-name" placeholder="Name...">                   
+    </div>
+        <!-- ... -->
+</div>
+```
+
+and just *flex* the whole thing:
+
+```css
+.mainMiddle{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5%;
+}
+.formField, input{
+    width: 300px;
+    padding: 2%;
+}
+label{display: block;}
+```
+
+And the layout is compete...
+

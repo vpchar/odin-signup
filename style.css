@@ -32,10 +32,23 @@ main{
 /* main */
 .mainHead, .mainBottom{
     height: calc(15vh + 70px);
-    width: 60vw;
+    /* width: 60vw; */
     margin:0;
     padding: 5vh 5vw;
 }
+
+.mainMiddle{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5%;
+}
+.formField, input{
+    width: 300px;
+    padding: 2%;
+    /* flex-shrink: 0; */
+}
+label{display: block;}
 
 /* Mobile First is second here ;-) */
 @media (max-width:850px) {
@@ -50,6 +63,10 @@ main{
     .mainHead, .mainBottom{
         width: 90vw;
         height: 10vh;
+    }
+    .formField, input{
+        display: block;
+        width: 70%;
     }
 }
 @media (max-width:550px) {
