@@ -15,7 +15,7 @@ the task and how to cut it in small pieces.
 
 # Plan for the beginning of the page
 The first representation was this: 
-![draft 1 - full screen] ('readme/Frame 1.png')
+![draft 1 - full screen] (readme/Frame 1.png)
 
 Then I decided to ask for this also: 
-![draft 2 - mobile screens] ('readme/Frame 2.png')
+![draft 2 - mobile screens] (readme/Frame 2.png)
