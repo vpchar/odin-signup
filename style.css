@@ -18,12 +18,23 @@ aside{
     flex: 1 0 30%;
     flex-direction: column;
     /* moving logo down */
-    padding: 15% 0;
+    padding: 25vh 0;
 }
 main{
     /* Return sidebar for the nested main container */
     overflow-y: auto;
     flex: 1 0 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+}
+
+/* main */
+.mainHead, .mainBottom{
+    height: calc(15vh + 70px);
+    width: 60vw;
+    margin:0;
+    padding: 5vh 5vw;
 }
 
 /* Mobile First is second here ;-) */
@@ -36,6 +47,10 @@ main{
         flex: 0 0 10%;
         padding: 3% 0;
     }
+    .mainHead, .mainBottom{
+        width: 90vw;
+        height: 10vh;
+    }
 }
 @media (max-width:550px) {
     .container{
@@ -46,6 +61,10 @@ main{
         /* flex-shrink: 1; */
         padding: 1% 0;
         flex: 0 0 0;
+    }
+    .mainHead, .mainBottom{
+        /* order:1; */
+        height: 10vh;
     }
 }
 
@@ -75,4 +94,15 @@ aside {
     text-align: middle;
     /* fix for font line height */
     padding-top: 12px;
+}
+.mainHead, .mainBottom{
+    background-color: rgb(245, 244, 244);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+}
+.mainBottom{
+    align-items:flex-start;
 }

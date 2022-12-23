@@ -133,6 +133,42 @@ aside {
 }
 ```
 
-Once I made the sidebar with an empty *main* content part; I had to repeat the same process but only for the main container.
+Once I made the sidebar with an empty *main* content part; I had to repeat the same process but only for the main container. Just few nested divs and a form:
 
+```html
+    <main> <!-- main content placeholder -->
+        
+        <div class="mainHead"><p>
+            This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+                Sign up now to get started.
+                You know you want to.
+        </p></div>
+        <form><!-- signup form itself, definitely content -->
+            <div class="mainMiddle"></div>
+            <div class="mainBottom"><button type="submit">Sign Up</button> </div>
+        </form>
+        
+    </main> 
+```
 
+With the respective layout css added to make *main* flex-column:
+
+```css
+main{
+    /* Return sidebar for the nested main container */
+    overflow-y: auto;
+    flex: 1 0 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+}
+
+/* main */
+.mainHead, .mainBottom{
+    height: calc(15vh + 70px);
+    width: 60vw;
+    margin:0;
+    padding: 5vh 5vw;
+}
+```
