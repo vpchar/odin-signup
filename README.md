@@ -226,3 +226,6 @@ But with the @media magic it will make things responsive"
  ```
 
 And with that fix, the layout is compete. The rest is just borders and colors...
+
+# TO DO
+I would do the rest of the assignment, like javascript validation or error messages, but that was beyond the scope of my goal here. What I needed was the layout...

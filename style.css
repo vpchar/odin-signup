@@ -8,6 +8,7 @@ body{
     height: 100vh;
     margin:0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .container{
     /* set the container to flex model */
@@ -39,13 +40,16 @@ main{
     height: calc(15vh + 70px);
     margin:0;
     padding: 5vh 5vw;
+    display: flex;
+    /* keep gray text aligned with logo box */
+    flex-shrink: 0;
 }
 
 .mainMiddle{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 5%;
+    padding: 1% 5%;
 }
 .formField, input{
     width: 300px;
@@ -53,6 +57,10 @@ main{
     /* flex-shrink: 0; */
 }
 label{display: block;}
+.footText{
+    
+    width: 100%;
+}
 
 /* Mobile First is second here ;-) */
 @media (max-width:850px) {
@@ -65,8 +73,8 @@ label{display: block;}
         padding: 3% 0;
     }
     .mainHead, .mainBottom{
-        width: 90vw;
-        height: 10vh;
+        width: 88vw;
+        height: 20vh;
     }
     .formField, input{
         display: block;
@@ -123,10 +131,52 @@ aside {
     font-size: large;
     font-weight: bold;
     align-items: center;
-    display: flex;
+    
 }
 .mainBottom{
     align-items:flex-start;
 }
 
-.formField
+.hf{
+    display: block;
+    width: 100%;
+    padding-left: 2%;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 2%;
+}
+.formField>label{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:xx-small;
+    color: rgb(90, 88, 88);
+    margin-bottom: 3px;
+    letter-spacing: 1px;
+}
+.formField>input{
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+}
+
+.mainBottom{ padding: 3% 7%;}
+.mainBottom button{
+    background-color: #596D48;
+    padding: 10px 25px;
+    color: #E5E7EB;
+    font-weight: bolder;
+    border: 1px solid #596D48;
+    border-radius: 8px;
+    margin-bottom: 1%;
+}
+.mainBottom button:hover{
+    background-color: #596D00;
+    cursor: pointer;
+}
+.footText{
+    font-size: small;
+    font-weight: normal;
+    color: rgb(90, 88, 88);;
+}
+.mainBottom{
+    box-shadow: 2px 2px 5px grey;
+}

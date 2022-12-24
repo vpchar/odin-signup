@@ -24,39 +24,43 @@
         <div class="mainHead"><p>
             This is not a real online service! You know you need something
                 like this in your life to help you realize your deepest dreams.
-                Sign up now to get started.
+                Sign up now to get started.<br /><br />
                 You know you want to.
         </p></div>
         <form><!-- signup form itself, definitely content -->
             <div class="mainMiddle">
+                <div class="hf">Let's do this!</div>
                 <!-- form fields -->
                 <div class="formField">
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name" placeholder="Name...">                   
+                    <label for="first-name">First Name *</label>
+                    <input type="text" required name="first-name" id="first-name" placeholder="Your Name...">                   
                 </div>
                 <div class="formField">
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name" placeholder="Name...">                   
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Family Name (optional)">                   
                 </div>
                 <div class="formField">
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name" placeholder="Name...">                   
+                    <label for="email">Email *</label>
+                    <input type="email" required name="email" id="email" placeholder="Enter your email here...">                   
                 </div>
                 <div class="formField">
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name" placeholder="Name...">                   
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone" placeholder="Phone number (optional)">                   
                 </div>
                 <div class="formField">
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name" placeholder="Name...">                   
+                    <label for="first-name">Password *</label>
+                    <input type="password" name="password" id="password" placeholder="Enter strong password, please..." required>                   
                 </div>
                 <div class="formField">
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name" placeholder="Name...">                   
+                    <label for="password2">Confirm Password *</label>
+                    <input type="password" name="password2" id="password2" placeholder="Repeat the password..." required>                   
                 </div>
-                 <!-- ... -->
+                 <!-- end form fields -->
             </div>
-            <div class="mainBottom"><button type="submit">Sign Up</button> </div>
+            <div class="mainBottom">
+                <button type="submit">Create Account</button><br />
+                <p class="footText">Already have an account? <a href="#">Log in</a></p> 
+            </div>
         </form>
         
     </main> 
