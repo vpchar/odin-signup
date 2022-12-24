@@ -22,7 +22,7 @@ I got back with the general idea to make some "workflow" model, in order to simp
 
 Then I opened Figma (I am not a designer and don't want to be, but I feel we should at least have basic understanding of things like PS or Figma) to build this "workflow" diagram that I plan to use from now on for all such "cut-the-design" tasks in future:
 
-[design-to-code workflow](readme/design-to-code.png)
+![design-to-code workflow](readme/design-to-code.png)
 
 With this as operative "algorythm" I opened the design png and started thinking what's content, what's layout and what's visuals only.  The vague idea was to focus on the layout first, then make it step by step, one container at a time.
 
