@@ -30,9 +30,13 @@ main{
 }
 
 /* main */
-.mainHead, .mainBottom{
+.mainBottom{
+    height: 15vh;
+    margin:0;
+    padding: 5vh 5vw;
+}
+.mainHead{
     height: calc(15vh + 70px);
-    /* width: 60vw; */
     margin:0;
     padding: 5vh 5vw;
 }
@@ -85,8 +89,9 @@ label{display: block;}
     }
 }
 
-/* (2) CSS Visual Beauty */
+/* (2) CSS Visual & "Beauty" */
 /* ============================================================ */
+
 aside {
     background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
@@ -123,3 +128,5 @@ aside {
 .mainBottom{
     align-items:flex-start;
 }
+
+.formField
