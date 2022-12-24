@@ -4,6 +4,8 @@ const validateForm = ()=>{
     const pw = document.getElementById("password").value;  
     const pw2 = document.getElementById("password2").value;  
     const email = document.getElementById("email").value;
+    document.getElementById("message1").innerHTML = '';
+    document.getElementById("message").innerHTML = '';
     //check are these passwords the same 
     if(pw != pw2) {  
        document.getElementById("message1").innerHTML = "* Passwords doesn't match!";  
