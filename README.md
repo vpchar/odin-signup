@@ -9,24 +9,35 @@
 To practice css
 
 # Initial Failure
-I started on blank file and...in 2 hours deleted everything and went away
+I started on blank file and...after 2 hours deleted everything and went away. As many times before, I felt lost in this *css mess*. Did I say I hate(d) CSS? Anyway, if I want to become web dev, I have to learn to love this thing. So I got a break.
+
 While drinking coffe outside, I decided to make a plan. The plan was about how to structure
 the task and how to cut it in small pieces. 
+
+Oh, yeah, I played this https://flexboxfroggy.com game while outside. That was also refreshing
+
+# Keep it simple, stupid
+
+I got back with the general idea to make some "workflow" model, in order to simpify the task.
+
+Then I opened Figma (I am not a designer and don't want to be, but I feel we should at least have basic understanding of things like PS or Figma) to build this "workflow" diagram that I plan to use from now on for all such "cut-the-design" tasks in future:
+
+[design-to-code workflow](readme/design-to-code.png)
+
+With this as operative "algorythm" I opened the design png and started thinking what's content, what's layout and what's visuals only.  The vague idea was to focus on the layout first, then make it step by step, one container at a time.
 
 # Plan for the beginning of the page
 The first representation was this: 
 
 ![draft 1 - full screen](readme/Frame1.png)
 
-Then I decided to ask for this also: 
+Then I decided to ask for responsive behavior also: 
 
 ![draft 2 - mobile screens](readme/Frame2.png)
 
-So I focused on the LAYOUT and spent few minutes looking for solutions online, then came back at home and built it. If you know what's happening, you kinda "see it". Still hate css but little less now...
+So I focused on the LAYOUT again and spent few minutes looking for solutions online, then built it. If you know what's happening, you kinda "see it". Still hate css but little less now...
 
-Oh, yeah, I played this https://flexboxfroggy.com game while outside. That was also refreshing
-
-I found that if I split the css file in two -- one for the layout (skelethone) and one for the visual gimmics, things are better. Reinventing the weel here, I suppose, but separating things on smaller parts always helps me.
+I decided that if I split the css file in two -- one for the layout (skelethone) and one for the visual gimmics, things could be better (see above). Reinventing the weel here, I suppose, but separating things on smaller parts always helps me.
 
 at this stage I had working responsive basic layout with this html:
 
@@ -172,7 +183,7 @@ main{
     padding: 5vh 5vw;
 }
 ```
-And that's almost all! The layout part was pretty much done. I just had to add the input fields to the form, make them to wrap and put enough width to make them wrap on small screens:
+And that's almost all! The layout part was pretty much done. I just had to add the input fields to the form, make them to wrap and put enough width to make them to be in 1 column on small screens. I don't know how to use *grid* layout for this in this stage of my TOP journey, so I used "width" hack. If you don't think *css* is a programming language, think again. These @media things are, all in all, if-then operators. Here is the code:
 
 ```html
 <div class="mainMiddle">
@@ -201,5 +212,17 @@ and just *flex* the whole thing:
 label{display: block;}
 ```
 
-And the layout is compete...
+On full screen it will put the form fields in 2 columns (because the 300px width). 
+But with the @media magic it will make things responsive"
 
+ ```css
+ @media (max-width:850px) {
+    /* ... */
+    .formField, input{
+        display: block;
+        width: 70%;
+    }
+}
+ ```
+
+And with that fix, the layout is compete. The rest is just borders and colors...
