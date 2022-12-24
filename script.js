@@ -19,4 +19,5 @@ const validateForm = ()=>{
         document.getElementById("message").innerHTML = "* Invalid email address";  
         return false; 
       }
+      return true;
 }
