@@ -27,7 +27,7 @@
                 Sign up now to get started.<br /><br />
                 You know you want to.
         </p></div>
-        <form><!-- signup form itself, definitely content -->
+        <form onsubmit ="return validateForm()"><!-- signup form itself, definitely content -->
             <div class="mainMiddle">
                 <div class="hf">Let's do this!</div>
                 <!-- form fields -->
@@ -42,14 +42,16 @@
                 <div class="formField">
                     <label for="email">Email *</label>
                     <input type="email" required name="email" id="email" placeholder="Enter your email here...">                   
+                    <span id = "message" class="error"> </span>
                 </div>
                 <div class="formField">
                     <label for="phone">Phone</label>
                     <input type="text" name="phone" id="phone" placeholder="Phone number (optional)">                   
                 </div>
                 <div class="formField">
-                    <label for="first-name">Password *</label>
+                    <label for="password">Password *</label>
                     <input type="password" name="password" id="password" placeholder="Enter strong password, please..." required>                   
+                    <span id = "message1" class="error"> </span>
                 </div>
                 <div class="formField">
                     <label for="password2">Confirm Password *</label>

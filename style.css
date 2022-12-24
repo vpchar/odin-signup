@@ -145,7 +145,7 @@ aside {
     font-weight: bold;
     padding-top: 2%;
 }
-.formField>label{
+.formField>label, .error{
     text-transform: uppercase;
     font-weight: bold;
     font-size:xx-small;
@@ -153,6 +153,7 @@ aside {
     margin-bottom: 3px;
     letter-spacing: 1px;
 }
+.error{color:red;text-transform: capitalize;}
 .formField>input{
     border: 1px solid #E5E7EB;
     border-radius: 4px;
