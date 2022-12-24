@@ -8,6 +8,9 @@
 # Goal:
 To practice css
 
+# Live demo
+https://vpchar.github.io/odin-signup/
+
 # Initial Failure
 I started on blank file and...after 2 hours deleted everything and went away. As many times before, I felt lost in this *css mess*. Did I say I hate(d) CSS? Anyway, if I want to become web dev, I have to learn to love this thing. So I got a break.
 
